@@ -1,0 +1,269 @@
+/* ELEMENTS PRINCIPAUX */
+body {
+    margin: 10px !important;
+    font: 0.8em "Arial", sans-serif !important;
+}
+
+/* Modifications de bootstrap */
+.row {
+    margin: 0 !important;
+}
+.row>* {
+    padding: 0 !important;
+}
+
+ul  {
+    list-style: none;
+    padding: 0 !important;
+}
+
+/* Barre d'affichage de direction (savoir où on se trouve) */
+.link_dir {
+    display: flex;
+    margin: 16px 0 16px 0;
+}
+
+.link_dir a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.link_dir a:hover{
+    text-decoration: underline;
+}
+
+
+/* ELEMENTS DU HEADER */
+.header .recherche {
+    display: flex;
+    align-items: center;
+}
+
+.header .recherche form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ELEMENTS DU MENU DE NAVIGATION */
+nav {
+    padding-top: 15px;
+    position: relative; /* Sert pour les sous-menu */
+}
+.nav li a {
+    display:block;
+    color: rgb(12, 80, 238);
+    text-decoration: none;
+    margin-right: 1px;
+}
+
+.nav a.menu_link {
+    background-image: url('../img/bkg_menu_demarches.jpg');
+    background-repeat: repeat;
+    padding: 12px;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 1px 0px lightgrey;
+    border-bottom: 2px solid white;
+}
+
+.nav a.menu_link:hover {
+    text-decoration: underline;
+    color: rgb(0, 190, 255);
+}
+
+
+.nav .sous-menu {
+    display: none;
+    position: absolute;
+    width: calc(25% - 3px); /* 25% de la taille maximum de son parent en position relative = nav*/
+    background-image: url('../img/bg-contenu2.png');
+    background-size: cover;
+}
+
+.nav .sous-menu li{
+    padding: 6px 0 0 15px;
+    font-size: 14px;
+}
+
+.nav  li:hover .sous-menu{
+    display: block;
+}
+
+.nav a.menu_link:hover, .nav a.sous-menu_link:hover {
+    text-decoration: underline;
+    color: rgb(0, 190, 255);
+}
+
+
+
+/* ELEMENTS DU CONTENU PRINCIPAL */
+/* SECTION MAIN */
+
+main h1 {
+    text-transform: uppercase;
+    width: calc(100% - 3px);
+    background-color: rgb(14, 95, 150);
+    color: white;
+    font-size: 16px;
+    padding: 5px 0 5px 5%;
+    border-radius: 10px 10px 0 0;
+}
+
+main .annonce {
+    width: calc(100% - 3px);
+    color: rgb(23, 76, 198);
+    font-weight: 600; 
+    margin: 8px 0 8px 0;
+}
+
+main .row {
+    width: calc(100% - 3px);
+    background-image: url('../img/bg-contenu2.png');
+    background-size: cover;
+    box-shadow: 0 1px rgb(190, 190, 190);
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/* RUBRIQUES MAIN & ASIDE */
+main .rubriques {
+    padding: 8px 8px 15px 10px;
+}
+
+.rubriques a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rubriques a > img {
+    margin-right: 10px;
+}
+
+.rubriques ul {
+    margin: 16px 0 8px 0;
+}
+
+main .rubriques li {
+    padding: 8px 75px 0 8px;
+    font-size: 12px;
+    color: black;
+}
+
+.astuces li > a, .actualites li > a {
+    text-decoration: none;
+    padding: 8px 10px 0 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+.astuces li > a span, .actualites li > a span, .actualites .bottom_link a{
+    color: rgb(156, 47, 3);
+    font-weight: 600;
+}
+
+aside .bottom_link {
+    text-align: right;
+    padding: 5px 10px;
+}
+
+aside .rubriques ul{
+    margin: 16px 0 16px 0;
+    padding: 8px 8px 15px 5px !important;
+}
+
+aside .rubriques ul > li{
+    padding: 5px 0;
+}
+
+
+
+/* SECTION ASIDE */
+aside h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    padding: 6px 0 6px 10%;
+}
+
+aside .astuces, aside .actualites{
+    background-image: url('../img/bg-contenu2.png');
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside .astuces h3{
+    background-color: rgb(14, 95, 150);
+    border-radius: 10px 10px 0 0;
+}
+
+aside .actualites h3{
+    background-color: rgb(156, 47, 3);
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+/* ELEMENTS DU FOOTER */
+footer {
+    color: white;
+}
+
+footer .row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_top {
+    background-color: rgb(0, 139, 211);
+    padding: 1rem;
+}
+
+.footer_top ul > li.list-inside  {
+    list-style: inside;
+    color: rgb(120, 202, 230);
+    padding: 0 17px 0 17px;
+}
+
+.footer_top p{
+    font-weight: 700 !important;
+}
+
+.footer_top .img_footer{
+    text-align: center;
+}
+
+
+.footer_bottom{
+    background-color: rgb(0, 50, 123);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .header .text, .header .submit{
+        height: 30px;
+    }
+
+    .link_dir {
+        justify-content: center;
+    }
+
+    .nav .sous-menu {
+        width: 100%;
+    }
+}
